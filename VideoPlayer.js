@@ -1110,6 +1110,7 @@ export default class VideoPlayer extends Component {
                     <Video
                         { ...this.props }
                         ref={ videoPlayer => this.player.ref = videoPlayer }
+                        fullscreen={this.state.isFullscreen}
 
                         resizeMode={ this.state.resizeMode }
                         volume={ this.state.volume }
